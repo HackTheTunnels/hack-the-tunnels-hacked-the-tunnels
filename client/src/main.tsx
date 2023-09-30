@@ -13,6 +13,7 @@ import {
 } from "./pages";
 import { AccountProvider } from "./context";
 import "./index.scss";
+import PageError from "./pages/PageError/PageError";
 
 const router = createBrowserRouter([
   {
@@ -44,8 +45,8 @@ const router = createBrowserRouter([
     element: <CreateProduct />,
   },
   {
-    path: "*",
-    element: <div>404</div>,
+    path: "/404-page",
+    element: <PageError />,
   },
 ]);
 
